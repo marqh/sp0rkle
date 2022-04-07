@@ -27,6 +27,8 @@ func Init() {
 		"choose one of the (space, pipe, quote) delimited options at random")
 	bot.Command(decideCmd, "choose", "choose <options>  -- "+
 		"choose one of the (space, pipe, quote) delimited options at random")
+	bot.Command(rollCmd, "roll", "roll <n>d<x> --"+
+		    "roll n dice of x faces each (n is optional, default 1)")
 }
 
 func randomFloatAsString(val string) string {
